@@ -1,19 +1,19 @@
 [
     {
       "ParameterKey": "AmazonECRImageUri",
-      "ParameterValue": "123456789.dkr.ecr.us-west-2.amazonaws.com/amazontestimage:latest"
+      "ParameterValue": "222634389302.dkr.ecr.us-east-1.amazonaws.com/amazontestimage:latest"
     },
     {
       "ParameterKey": "AmazonConnectName",
-      "ParameterValue": "amazomconnectdemoinstance"
+      "ParameterValue": "dcc-gov-env"
     },
     {
       "ParameterKey": "AmazonLexBotName",
-      "ParameterValue": "amazonlexbot"
+      "ParameterValue": "army360v4"
     },  
     {
       "ParameterKey": "AmazonLexBotAliasName",
-      "ParameterValue": "prodversion"
+      "ParameterValue": "version1"
     },
     {
       "ParameterKey": "LoggingLevel",
