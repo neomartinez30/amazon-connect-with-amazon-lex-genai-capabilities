@@ -143,8 +143,8 @@ Resources:
               ValueSelectionSetting:
                 ResolutionStrategy: ORIGINAL_VALUE
           Intents:
-            - Name: "customBusinessVocabIntent"
-              Description: "For any financials related questions"
+            - Name: "StartWaiver"
+              Description: "iintent to start waiver"
             - Name: "no"
               Description: "Customer response"
               SampleUtterances:
@@ -161,22 +161,24 @@ Resources:
                 - Utterance: "positive"
                 - Utterance: "yea"
                 - Utterance: "roger"
-            - Name: "updatePaymentMethod"
-              Description: "Information on the payment methods"
+            - Name: "typeofwaiver"
+              Description: "typeof waiver"
               SampleUtterances:
-                - Utterance: "i want to update my payment method"
-            - Name: "technicalSupport"
-              Description: "Requesting technical support"
+                - Utterance: "i want to start a  new  waiver"
+                - Utterance: "i need  to  fill  out a  medical waiver"
+                - Utterance: "i need  to  fill  out a  conduct waiver"
+            - Name: "coductwaiver"
+              Description: "Moral conduct waiver"
               SampleUtterances:
-                - Utterance: "I need technical support"
-                - Utterance: "I want to speak with an agent"
-                - Utterance: "I need technical help"
-            - Name: "orderStatus"
-              Description: "Providing order status"
+                - Utterance: "I need to submit a conduct waiver"
+                - Utterance: "I want to track my coduct waiver"
+                - Utterance: "I would like to submit my conduct waiver"
+            - Name: "medicalwaiver"
+              Description: "medical waiver"
               SampleUtterances:
-                - Utterance: "I want to check the status of my order"
-                - Utterance: "I want to track my order"
-                - Utterance: "I would like to track my order"
+                - Utterance: "i need  to  fill  out a  medical waiver"
+                - Utterance: "I want to track my medical waiver"
+                - Utterance: "I would like to submit my medical waiver"
               SlotPriorities:
                 - Priority: 1
                   SlotName: orderNumber
@@ -207,11 +209,11 @@ Resources:
                       - Message:
                           PlainTextMessage:
                             Value: "Thank You. I have successfully created a track request for your order. We will send you tracking information via email within the next 15 minutes."               
-            - Name: "manifest"
-              Description: "Providing manifest related information"
+            - Name: "natureofoffense"
+              Description: "nature of offense"
               SampleUtterances:
-                - Utterance: "Can I get the manifest document"
-                - Utterance: "Get me Mani Fest"
+                - Utterance: "i would like to enter an offenset"
+                - Utterance: "i would like to enter a legal issue"
               SlotPriorities:
                 - Priority: 1
                   SlotName: manifestNumber
